@@ -1,68 +1,219 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Test</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
 
-        <!-- UIkit CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/css/uikit.min.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Naufal Shidqi :: Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/live-resume.css">
+</head>
 
-        <!-- UIkit JS -->
-        <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit-icons.min.js"></script>
-
-        <style>
-        .margin-kiri-kanan {
-            margin: 60px 200px;
-        }
-        .padding-kiri-kanan {
-            padding: 50px 275px 50px;
-        }
-        @media screen and (max-width:750px){
-            #my-content { display: none; }
-            .margin-kiri-kanan {
-                margin: 100px 20px;
-            }
-            .padding-kiri-kanan {
-                padding: 10px;
-            }
-        }
-        </style>
-    </head>
-    <body>
-        <!-- <div style="background-color: blue; width: 100%; height: 100vh; position: relative;">
-            <div style="background-color: black; width: 100px; height: position: absolute; 100px;-ms-transform: translateY(50%); transform: translateY(50%);">
+<body>
+    <header>
+        <button class="btn btn-white btn-share ml-auto mr-3 ml-md-0 mr-md-auto"><img src="assets/images/share.svg" alt="share" class="btn-img">
+            SHARE</button>
+        <nav class="collapsible-nav" id="collapsible-nav">
+            <a href="index.html" class="nav-link active">HOME</a>
+            <a href="portfolio.html" class="nav-link">PORTFOLIO</a>
+        </nav>
+        <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav"
+            data-target="collapsible-nav"><img src="assets/images/hamburger.svg" alt="hamburger"></button>
+    </header>
+    <div class="content-wrapper">
+        <aside>
+            <div class="profile-img-wrapper">
+                <img src="assets/images/Profile.png" alt="profile">
             </div>
-        </div> -->
-        <div style="background-color: #112D54; width: 100%; height: 100vh; position: absolute;">
-            <div class="uk-card uk-card-default margin-kiri-kanan">
-                <div class="uk-grid-collapse uk-child-width-1-1@s uk-child-width-1-1@s" uk-grid>
-                    <div class="padding-kiri-kanan">
-                        <h3 class="uk-text-center"><b>Login Dulu</b></h3>
-                        <p class="uk-text-center">Atau belum punya akun? <a href="register">Buat dulu</a></p>
-                        <div class="uk-alert-success" style="border-radius: 5px" uk-alert>
-                            <p class="uk-text-center">Login Berhasil</p>
-                        </div>
-                        <form action="#" method="POST">
-                            <fieldset class="uk-fieldset">
-                                <div class="uk-margin">
-                                    <label style="text-align: left;">Alamat E-mail</label>
-                                    <input class="uk-input" name="email" style="border-radius: 5px;" type="email">
-                                </div>
-                                <div class="uk-margin">
-                                    <label style="text-align: left;">Password</label>
-                                    <input class="uk-input" name="password" style="border-radius: 5px;" type="password">
-                                </div>
-                                <p class="uk-text-center"><a href="resetpassword">Lupa password?</a></p>
-                                <div class="uk-margin">
-                                    <button class="uk-button uk-button-primary" style="width: 100%; border-radius: 5px; text-transform: none;">Login</button>
-                                </div>
-                            </fieldset>
-                        </form>
+            <h1 class="profile-name">Naufal Shidqi</h1>
+            <div class="text-center">
+                <span class="badge badge-white badge-pill profile-designation">Backend Engineer</span>
+            </div>
+            <nav class="social-links">
+                <a href="https://www.instagram.com/andbukanad/" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://t.me/andbukanad" class="social-link"><i class="fab fa-telegram"></i></a>
+                <a href="https://line.me/ti/p/~.fal" class="social-link"><i class="fab fa-line"></i></a>
+                <a href="https://github.com/echobots" class="social-link"><i class="fab fa-github"></i></a>
+            </nav>
+            <div class="widget">
+                <h5 class="widget-title">personal information</h5>
+                <div class="widget-content">
+                    <p>BIRTHDAY : 30 September 1998</p>
+                    <p>WEBSITE : indoit.net</p>
+                    <p>PHONE : +62 821 6563 4738</p>
+                    <p>MAIL : naufalshidqi.fal@gmail.com</p>
+                    <p>Location : Medan, Sumatera Utara Indonesia</p>
+                    <button class="btn btn-download-cv btn-primary rounded-pill"> <img src="assets/images/download.svg" alt="download"
+                        class="btn-img">DOWNLOAD CV </button>
+                </div>
+            </div>
+            <div class="widget card">
+                <div class="card-body">
+                    <div class="widget-content">
+                        <h5 class="widget-title card-title">LANGUAGES</h5>
+                        <p>Indonesia</p>
+                        <p>English</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </body>
+            <div class="widget card">
+                <div class="card-body">
+                    <div class="widget-content">
+                        <h5 class="widget-title card-title">INTERESTS</h5>
+                        <p>Video Games</p>
+                        <p>Machine Learning</p>
+                        <p>Big Data</p>
+                        <p>Artificial Intelligence</p>
+                        <p>Photography</p>
+                        <p>Read</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <section class="intro-section">
+                <h2 class="section-title">Hello, Naufal Shidqi!</h2>
+                <p>Saya merupakan seseorang yang tertarik pada pengembangan aplikasi. maka dari itu saya sangat senang dapat
+                    mengimplementasikan dan berbagi apa yang telah saya ketahui ke orang lain serta memiliki semangat belajar
+                    yang tinggi untuk hal baru hingga dapat bermanfaat khususnya dalam bidang teknologi di Indonesia.</p>
+                <a href="#!" class="btn btn-primary btn-hire-me">HIRE ME</a>
+            </section>
+            <section class="resume-section">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h6 class="section-subtitle">RESUME</h6>
+                        <h2 class="section-title">EDUCATION</h2>
+                        <ul class="time-line">
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2016 - 2021</span>
+                                <h6 class="time-line-item-title">Ilmu Komputer</h6>
+                                <p class="time-line-item-subtitle">Universitas Islam Negeri Sumatera Utara (S1)</p>
+                                <p class="time-line-item-content">Medan, Sumatera Utara Indonesia</p>
+                            </li>
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2013 - 2016</span>
+                                <h6 class="time-line-item-title">Rekayasa Perangkat Lunak</h6>
+                                <p class="time-line-item-subtitle">SMK Telkom Sandi Putra Medan</p>
+                                <p class="time-line-item-content">Medan, Sumatera Utara Indonesia</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h6 class="section-subtitle">RESUME</h6>
+                        <h2 class="section-title">Experience</h2>
+                        <ul class="time-line">
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2020</span>
+                                <h6 class="time-line-item-title">Mobile Application (Back-End Engineer)</h6>
+                                <p class="time-line-item-subtitle">PT Ori Ginalnest</p>
+                                <p class="time-line-item-content">Python, PostgreSQL</p>
+                            </li>
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2020</span>
+                                <h6 class="time-line-item-title">Hackathon (Programmer)</h6>
+                                <p class="time-line-item-subtitle">Indonesian Data Journalism Network</p>
+                                <p class="time-line-item-content">Python, Scraping, Analyzing, Big Data</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- <section class="clients-section">
+                <h6 class="section-subtitle">WHAT I DO</h6>
+                <h2 class="section-title">CLIENTS</h2>
+                <div class="client-logos-wrapper">
+                    <div class="client-logo"><img src="assets/images/Clients_1.svg" alt="logo" class="w-100"></div>
+                    <div class="client-logo"><img src="assets/images/Clients_2.svg" alt="logo" class="w-100"></div>
+                    <div class="client-logo"><img src="assets/images/Clients_3.svg" alt="logo" class="w-100"></div>
+                    <div class="client-logo"><img src="assets/images/Clients_4.svg" alt="logo" class="w-100"></div>
+                </div>
+            </section> -->
+            <section class="services-section">
+                <h6 class="section-subtitle">WHAT I DO</h6>
+                <h2 class="section-title">SERVICES</h2>
+                <div class="row">
+                    <div class="media service-card col-lg-6">
+                        <div class="service-icon">
+                            <img src="assets/images/001-target.svg" alt="target">
+                        </div>
+                        <div class="media-body">
+                            <h5 class="service-title">web designing</h5>
+                            <p class="service-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed
+                                tortor.</p>
+                        </div>
+                    </div>
+                    <div class="media service-card col-lg-6">
+                        <div class="service-icon">
+                            <img src="assets/images/003-idea.svg" alt="bulb">
+                        </div>
+                        <div class="media-body">
+                            <h5 class="service-title">Graphic design</h5>
+                            <p class="service-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed
+                                tortor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="media service-card col-lg-6">
+                        <div class="service-icon">
+                            <img src="assets/images/002-development.svg" alt="development">
+                        </div>
+                        <div class="media-body">
+                            <h5 class="service-title">Development</h5>
+                            <p class="service-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed
+                                tortor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="media service-card col-lg-6">
+                        <div class="service-icon">
+                            <img src="assets/images/004-smartphone.svg" alt="smartphone">
+                        </div>
+                        <div class="media-body">
+                            <h5 class="service-title">Mobile design</h5>
+                            <p class="service-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed
+                                tortor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <section class="achievements-section">
+                <h6 class="section-subtitle">WHAT I DO</h6>
+                <h2 class="section-title">ACHIEVEMENTS</h2>
+                <div class="achievement-cards-wrapper">
+                    <div class="media achievement-card">
+                        <img src="assets/images/puzzle.svg" alt="puzzle" class="achievement-card-icon">
+                        <div class="media-body">
+                            <h4 class="achievement-card-title">550+</h4>
+                            <p class="achievement-card-description">COMPLETED PROJECTS</p>
+                        </div>
+                    </div>
+                    <div class="media achievement-card">
+                        <img src="assets/images/team.svg" alt="puzzle" class="achievement-card-icon">
+                        <div class="media-body">
+                            <h4 class="achievement-card-title">23K</h4>
+                            <p class="achievement-card-description">HAPPY CLIENTS</p>
+                        </div>
+                    </div>
+                    <div class="media achievement-card">
+                        <img src="assets/images/trophy.svg" alt="puzzle" class="achievement-card-icon">
+                        <div class="media-body">
+                            <h4 class="achievement-card-title">55</h4>
+                            <p class="achievement-card-description">AWARDS RECIEVED</p>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <footer>Copyright 2021 © All Rights Reserved.</footer>
+        </main>
+    </div>
+    <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendors/@popperjs/core/dist/umd/popper-base.min.js"></script>
+    <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/live-resume.js"></script>
+</body>
+
 </html>
